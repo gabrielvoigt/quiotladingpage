@@ -17,13 +17,93 @@
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            @keyframes rotate {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+
+            .container_circle {
+                position: relative;
+                width: 4rem;
+                height: 4rem;
+            }
+
+            .circle {
+                position: absolute;
+                width: 4rem;
+                height: 4rem;
+                animation: rotate 230s linear infinite;
+            }
+
+            .word {
+                position: absolute;
+                width: 4rem;
+                height: 4rem;
+                left: 0;
+                top: 0;
+                z-index: 1;
+            }
+
+            .container_circle_big {
+                position: relative;
+                width: 17rem;
+                height: 17rem;
+                left: 9rem;
+            }
+
+            .circle_big {
+                position: absolute;
+                width: 17rem;
+                height: 17rem;
+                animation: rotate 230s linear infinite;
+            }
+
+            .word_big {
+                position: absolute;
+                width: 17rem;
+                height: 17rem;
+                left: 9rem;
+                top: 0;
+                z-index: 1;
+            }
+
+            .container_circle_enormous {
+                position: relative;
+                width: 31.25rem;
+                height: 31.25rem;
+            }
+
+            .circle_enormous {
+                position: absolute;
+                width: 31.25rem;
+                height: 31.25rem;
+                animation: rotate 230s linear infinite;
+            }
+
+            .word_enormous {
+                position: absolute;
+                width: 31.25rem;
+                height: 31.25rem;
+                left: 1rem;
+                top: 0;
+                z-index: 1;
+            }
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
             <div class="container px-5">
                 <a class="navbar-brand fw-bold" href="#page-top">
-                    <img src="assets/img/logo_circle_blue.svg" alt="..." style="height: 4rem" />
+                    <div class="container_circle">
+                        <img class="circle" src="../assets/img/logo_only_circle_blue.svg" alt="..." />
+                        <img class="word" src="../assets/img/logo_only_name_blue.svg" alt="..." />
+                    </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
@@ -100,7 +180,10 @@
                 <div class="row gx-5 justify-content-center">
                     <div class="col-xl-8">
                         <div class="h2 fs-1" style="color: #ffffff; margin-bottom: 4rem;">"Uma solução intuitiva para momentos em que precisamos de uma palavra amiga, um conselho ou simplesmente algo para refletir."</div>
-                        <img src="assets/img/logo_circle_white.svg" alt="..." style="height: 17rem" />
+                        <div class="container_circle_big">
+                            <img class="circle_big" src="../assets/img/logo_only_circle_white.svg" alt="..." />
+                            <img class="word_big" src="../assets/img/logo_only_name_white.svg" alt="..." />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -194,7 +277,10 @@
                     </div>
                     <div class="col-sm-8 col-md-6">
                         <div class="px-5 px-sm-0">
-                            <img src="assets/img/logo_circle_blue.svg" style="width: 500px; height: 500px;" alt="..." />
+                            <div class="container_circle_enormous">
+                                <img class="circle_enormous" src="../assets/img/logo_only_circle_blue.svg" alt="..." />
+                                <img class="word_enormous" src="../assets/img/logo_only_name_blue.svg" alt="..." />
+                            </div>
                         </div>
                     </div>
                 </div>
